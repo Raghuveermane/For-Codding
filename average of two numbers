@@ -1,19 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int length, breadth,area, perimeter;
+    float num1,num2,avg;
     
-    printf("Enter the length of a rectangle:");
-    scanf("%d",&length);
+    printf("Enter First Number\t");
+    scanf("%f",&num1);
     
-    printf("Enter the breadth of a rectangle:");
-    scanf("%d",&breadth);
+    printf("Enter Second Number\t");
+    scanf("%f",&num2);
     
-    area=length*breadth;
-    printf("\nArea of a rectangle is %d\t",area);
+    avg=(num1+num2)/2;
+    printf("The avg of %f and %f is %f",num1,num2,avg);
     
-    perimeter=2*(length+breadth);
-    printf("\nperimeter of a rectangle is %d\t", perimeter);
-    
-    return  0;
+    return 0;
 }
